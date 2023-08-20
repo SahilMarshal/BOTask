@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Sahil">
+	<meta name="keywords" content="HTML, CSS, JavaScript, Sahil, Sahil kurane, Kolhapur, Maharashtra, Figma, BlueOrbit, Blue Orbit">
+	<meta name="description" content="This is Prototype website developed by Sahil Kurane || Task given by Blue Orbit">
+	<meta property="og:title" content="Sahil Kurane | Prototype | Figma | BlueOrbit">
+	<meta property="og:site_name" content="Sahil Kurane | Figma | BlueOrbit">
+
+	<!-- BootStrap CDN version  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- script link -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- Main CSS Link -->
+	<link rel="stylesheet" type="text/css" href="D:\sahil\HTML,CSS\Projects\BlueOrbit\BlueOrbit Task.css">
+
+	<!-- Responsive page links  -->
+	<link rel="stylesheet" type="text/css" href="D:\sahil\HTML,CSS\Projects\BlueOrbit TaskResponsive.css">
+
+	<title>Blue Orbit Demo</title>
+	<style type="text/css">
+		/*External CSS || Main CSS || Blue Orbit Task */
+
+:root{
+	--due: #20C287; --cert: #FFAC30; --ops: #2D69F0; --act: #FF651B; --info: #FF4949;
+}
+
+/*Body*/
+*{
+	padding: 0; margin: 0; font-family: "poppins", sans-serif;
+}
+/*Header -- Navabr*/
+.nav-pills{
+	justify-content: flex-end;
+	align-items: center;
+}
+/*login button in navigation*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+	background-color: var(--due);
+	border-radius: 125px;
+    width: 105px;
+    height: 47.59px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px;
+}
+.nav-pills{
+	padding-right: 65px;
+	padding-block: 15px;
+}
+.nav-item{
+	padding-inline: 22px;
+	padding-block: 10px;
+}
+.nav-link{
+	font-size: 14px;
+    font-weight: 600;
+    color: #0E1133;	
+}
+
+
+/*Principal section*/
+#prince{
+	padding: 20px 81px 76px 81px;
+}
+/*left column*/
+#prince .row .col-4{
+	width: 40%; padding: 0;
+}
+#prince .row .col-6{
+	width: 60%;
+}
+#prince .row .col-4 h2{
+	color: #262626;
+	font-size: 62px;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+	padding-top: 30px;
+	margin: 0;
+}
+#prince .row .col-4 img{
+	height: 238px; width: 240px;
+	border-radius: 465.643px;
+	background: url(<path-to-image>), lightgray -30.744px -20.066px / 122.834% 120.161% no-repeat;
+}
+#prince .row .col-4 input{
+	width: 480px;
+    height: 70px;
+    margin: 30px 0 0 0;
+    padding: 0 0 0 20px;
+    border-radius: 156px;
+	border: 1px solid #CECACA;
+	background: #FFF;
+	box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
+}
+.prince-box{
+	width: 219px; height: 220px;
+	border-radius: 24.529px;
+	text-align: center;
+}
+.prince-box svg{
+	margin-top: 30px;
+}
+.prince-box p{
+	margin-top: 28px;
+	color: #FFF;
+	font-size: 20px;
+	font-weight: 500;
+}
+.prince-box:nth-child(1){
+	background: #AD4BFF;
+}
+.prince-box:nth-child(2){
+	background: #4B83FF;
+}
+.prince-box:nth-child(3){
+	background: #FFAC30;
+}
+.prince-box:nth-child(4){
+	background: rgba(255, 101, 27, 0.83);
+}
+.prince-box:nth-child(5){
+	background: #FF6B6B;
+}
+.prince-box:nth-child(6){
+	background: #6BD462;
+}
+.carousel-item.active{
+	display: grid;
+	justify-content: end;
+    grid-template-columns: 219px 219px 219px;
+    column-gap: 19px;
+    row-gap: 20px;
+}
+
+/*------------------section 2 Due--------------------*/
+/*section second padding*/
+#due{
+	background: #F3F4F8;
+	padding: 4rem 4.9rem 8rem 4.9rem;
+}
+/*first row -- text and buttons*/
+#due .due-row-1{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*whats due*/
+#due .due-row-1 p{
+	color: #14183E;
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+/*button group*/
+.due-but-group{
+	width: 26.15913rem;
+	height: 4.3475rem;
+	flex-shrink: 0;
+	border-radius: 7.64919rem;
+	border: 0.8px solid rgba(32, 194, 135, 0.44);
+	background: rgba(255, 255, 255, 0.65);
+}
+.due-but-group .nav-pills{
+	margin: 0; padding: 0;
+	justify-content: space-between;
+}
+.due-but-group .nav-pills.active{
+	border-radius: 4.20006rem;
+	background: #20C287;
+	box-shadow: 0px 9.081151008605957px 37.23271942138672px 0px rgba(32, 194, 135, 0.20);
+}
+.due-but-group .nav-pills .nav-item .nav-link{
+	color: rgba(20, 24, 62, 0.64);
+	font-size: 1.09994rem;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+/*date with nav icons*/
+.arrow{
+	display: flex;
+}
+.arrow svg{
+	width: 2.11006rem;
+	height: 2.11006rem;
+}
+.arrow p{
+	color: #14183E;
+	font-size: 1.60469rem;
+	font-weight: 500;
+}
+/*second row */
+.due-row-2{
+	display: grid;
+	justify-content: center;
+	row-gap: 2.1rem; column-gap: 1rem;
+	grid-template-columns: 26rem 26rem 26rem;
+	margin-top: 4rem;
+}
+/*main box*/
+.due-box{
+	width: 26.04119rem;
+	height: 7.25563rem;
+	flex-shrink: 0;	
+	border-radius: 0.65338rem;
+	background: #FFF;
+	box-shadow: 0px 13.304471969604492px 57.969482421875px 0px rgba(0, 0, 0, 0.06);
+	display: flex;
+	justify-content: center; align-items: center;
+}
+.due-box p{
+	margin: 0; 
+	width: 12.42813rem;
+	height: 3.29988rem;
+	flex-shrink: 0;
+	color: #14183E;
+	font-size: 1.09994rem;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+/*main box date and icon*/
+.due-box-data{
+	width: 9.9675rem;
+	height: 3.38075rem;
+	flex-shrink: 0;
+	border-radius: 4.20006rem;
+	background: #20C287;
+	box-shadow: 0px 9.081151008605957px 37.23271942138672px 0px rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*spacing between icon and date*/
+.due-box-data i{
+	padding-inline: 10px;
+}
+.due-box-data p{
+	margin: 0;
+	width: 5.22169rem;
+	height: 1.47569rem;
+	flex-shrink: 0;
+	color: #FFF;
+	font-size: 0.98231rem;
+	font-style: normal;
+	font-weight: 500;
+}
+
+/*--------------section whats new------------------*/
+#new{
+	padding: 6rem 5rem 5.6rem 5rem;
+}
+/*new-row-1 for search bar and title*/
+.new-row-1{
+	display: flex;
+	justify-content: space-between;
+}
+.new-row-1 p{
+	color: var(--3rd, #14183E);
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+/*new-row-2 contains 2 columns firsr for accordian another for boxes*/
+.new-row-2{
+	margin-top: 4rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.new-row-2 .col-7{
+	display: grid;
+	column-gap: 2.2rem;
+	row-gap: 1.4rem;
+	justify-content: center;
+	grid-template-columns: 23rem 23rem;
+}
+.new-box{
+	width: 23rem;
+	height: 11.40256rem;
+	flex-shrink: 0;
+	border-radius: 0.9375rem;
+	border: 1.3px solid rgba(20, 24, 62, 0.19);
+	background: #FFF;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 20px;
+	margin: 0;
+}
+.accordion-item{
+	width: 27.94194rem;
+	height: 6.0625rem;
+	flex-shrink: 0;
+	border-radius: 0.65338rem;
+	border: 1px solid #EEE;
+	background: #FFF;
+	box-shadow: 0px 13.304471969604492px 57.969482421875px 0px rgba(0, 0, 0, 0.06);
+}
+.accordion-item span{
+	width: 3.66681rem;
+	height: 3.667rem;
+	flex-shrink: 0;
+	border-radius: 7.64919rem;
+	border: 1.058px solid rgba(32, 194, 135, 0.38);
+	background: rgba(32, 194, 135, 0.15);
+}
+.accordion-item i{
+	padding: 25px 0 0 18px;
+}
+.new-butt{
+	position: absolute;
+	bottom: 0; left: 0;
+	width: 12.22281rem;
+	height: 4.70219rem;
+	flex-shrink: 0;
+	border-radius: 0.8125rem;
+	background: #20C287;
+	box-shadow: 0px 8px 41px 0px rgba(32, 194, 135, 0.20);
+	color: #FFF;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+text-transform: capitalize;
+}
+.new-box .due-box-data{
+	border-radius: 7.64919rem;
+border: 1.058px solid #20C287;
+background: rgba(32, 194, 135, 0.00);;
+}
+.new-box .due-box-data p{
+	color: #20C287;
+}
+.new-box h4{
+color: var(--3rd, #14183E);
+font-size: 1.1875rem;
+font-weight: 600;
+text-transform: capitalize;
+}
+.new-box p{
+	color: rgba(20, 24, 62, 0.64);
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 400;
+text-transform: capitalize;
+}
+
+/*-----------section certificate---------*/
+#cert{
+	padding: 6rem 12rem 6rem 12rem;
+}
+.cert-row{
+	display: flex;
+}
+.cert-box-data{
+	width: 2.96388rem;
+	height: 2.96388rem;
+	flex-shrink: 0;
+	border-radius: 10px;
+	background: #FFAC30;
+}
+.cert-box-data i{
+	padding: 20px 0px 0px 10px;
+}
+.cert-box{
+	padding: 2rem;
+	margin-block: 1.1rem;
+	display: flex;
+	align-items: center;
+	border-radius: 0.97788rem;
+border: 1.891px solid rgba(20, 24, 62, 0.10);
+background: #FFF;
+box-shadow: 0px 14.602930068969727px 63.627052307128906px 0px rgba(32, 194, 135, 0.06);
+width: 26.98088rem;
+height: 6rem;
+flex-shrink: 0;
+}
+.cert-box p{
+	padding-left: 20px;
+	color: #14183E;
+text-align: center;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+.cert-but{
+	width: 12.22281rem;
+height: 4.70219rem;
+flex-shrink: 0;
+color: #FFF;
+text-align: center;
+font-size: 1rem;
+font-weight: 500;
+text-transform: capitalize;
+border-radius: 0.8125rem;
+background: #FFAC30;
+box-shadow: 0px 8px 41px 0px rgba(255, 172, 48, 0.20);
+}
+#cert .col-6{
+	position: relative;
+}
+#cert .col-6 img{
+	position: absolute;
+	right: 0;
+	margin-right: 4rem;
+	width: 20rem;
+	height: 23rem;
+}
+.cert-row .col-6 h4{
+	color: #14183E;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 600;
+text-transform: capitalize;
+}
+.cert-img-box{
+	position: absolute; right: 0; bottom: 10px; left: 60px;
+	width: 9.85375rem;
+height: 9.85375rem;
+flex-shrink: 0;
+background: #FFAC30;
+}
+
+/*-----------section ops-----------------------*/
+#ops{
+	padding: 6.6rem 8.3rem 6.6rem 8.3rem;
+}
+.ops-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.ops-row h4{
+	color: #14183E;
+text-align: center;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+.ops-row input{
+	width: 18.69756rem;
+height: 4.58106rem;
+flex-shrink: 0;
+border-radius: 9.75rem;
+border: 1px solid #CECACA;
+box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
+}
+.ops-list{
+	margin-top: 4rem;
+	display: grid;
+	grid-template-columns: 22rem 22rem 22rem;
+	justify-content: center;
+	column-gap: 1.6rem;
+	row-gap: 2.3rem;
+}
+.ops-box{
+	display: flex;
+	width: 22rem;
+height: 7.09813rem;
+flex-shrink: 0;
+border-radius: 1.125rem;
+border: 1.89px solid rgba(20, 24, 62, 0.10);
+background: #FFF;
+padding: 25px;
+}
+.ops-box-icon{
+	border-radius: 0.88694rem;
+background: #2D69F0;
+	width: 4.06625rem;
+height: 4.06625rem;
+flex-shrink: 0;
+padding: 20px;
+margin-right: 10px;
+}
+.ops-box-icon i{
+}
+.ops-box p{
+	color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+padding-top: 10px;
+}
+.ops-but{
+	width: 12.22281rem;
+height: 4.70219rem;
+flex-shrink: 0;
+margin-top: 4rem;
+border-radius: 0.8125rem;
+background: #2D69F0;
+box-shadow: 0px 8px 41px 0px rgba(45, 105, 240, 0.20);
+}
+.ops-button{
+	text-align: center;
+}
+/*--------section action----------*/
+#action{
+	position: relative;
+	height: 50rem;
+}
+.bgimg{
+	height: 23rem;
+	background-image: url("bg.jpg");
+	background: rgba(21, 7, 0, 0.82);
+backdrop-filter: blur(4px);
+}
+.action-sect{
+	padding: 0 9rem 0 9rem;
+	position: absolute;
+	right: 0; left: 0; top: 6rem;
+}
+.act-list{
+	padding: 2.6rem 2.6rem;
+	border-radius: 0.5625rem;
+background: #FFF;
+box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.05);
+display: grid;
+grid-template-columns: 20rem 20rem 20rem;
+row-gap: 2.1rem; column-gap: 1.2rem;
+}
+.act-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	width: 20rem;
+height: 7.67381rem;
+border-radius: 0.6875rem;
+background: #FFF;
+box-shadow: 0px 14px 70px 0px rgba(0, 0, 0, 0.10);
+}
+.act-box p{
+	margin-bottom: 0;
+	padding-left: 10px;
+	color: var(--3rd, #14183E);
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+.act-row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 3.1rem;
+}
+.act-row h4{
+	color: #FFF;
+text-align: center;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+.act-row input{
+	width: 18.69756rem;
+height: 4.58106rem;
+flex-shrink: 0;
+border-radius: 9.75rem;
+border: 1px solid #CECACA;
+background: rgba(255, 255, 255, 0.12);
+backdrop-filter: blur(141px);
+}
+/*-------student info--------*/
+#info{
+	padding: 5rem 9rem 5rem 9rem;
+}
+.info-row-1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.info-row-1 h4{
+	color: #14183E;
+font-size: 2.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: capitalize;
+}
+.info-row-1 input{
+	width: 18.69756rem;
+height: 4.58106rem;
+flex-shrink: 0;
+border-radius: 9.75rem;
+border: 1px solid #CECACA;
+background: #FFF;
+box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
+}
+.info-row-2{
+	display: flex;
+	justify-content: center;
+}
+.info-row-2 .info-boxes{
+	display: grid;
+	grid-template-columns: 20rem 20rem;
+	row-gap: 1.2rem; column-gap: 1.7rem;
+	margin-top: 5rem;
+}
+.info-row-2 img{
+	clip-path: ellipse(40% 45% at 50% 50%);
+}
+.info-box{
+	padding: 20px;
+	width: 20rem;
+height: 5.41569rem;
+flex-shrink: 0;
+border-radius: 0.9375rem;
+border: 1px solid rgba(20, 24, 62, 0.10);
+background: #FFF;
+display: flex;  align-items: center;
+}
+.info-box p{
+	margin-bottom: 0;
+	padding-left: 10px;
+}
+.info-but{
+	width: 12.22281rem;
+height: 4.70219rem;
+flex-shrink: 0;
+border-radius: 0.8125rem;
+background: #FF4949;
+box-shadow: 0px 8px 41px 0px rgba(255, 73, 73, 0.20);
+margin-top: 3.3rem;
+}
+/*-------safe steps-----------*/
+#step{
+	padding: 7rem 6.4rem;
+}
+.step-row h4{
+	color: #14183E;
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: capitalize;
+}
+.step-row{
+	display: flex;
+	justify-content: space-between;
+}
+.step-row input{
+	width: 18.69756rem;
+height: 4.58106rem;
+	flex-shrink: 0;
+	border-radius: 9.75rem;
+	border: 1px solid #CECACA;
+	background: #FFF;
+	box-shadow: 0px 4px 250px 0px rgba(0, 0, 0, 0.25);
+}
+.cards{
+	margin-top: 3.7rem;
+	display: grid;
+	grid-template-columns: 17.8rem 17.8rem 17.8rem 17.8rem;
+	column-gap: 1.8rem; justify-content: center;
+}
+.card{
+	position: relative;
+	border-radius: 0.6875rem;
+background: #FFF;
+box-shadow: 0px 14px 61px 0px rgba(0, 0, 0, 0.06);
+}
+.card-text{
+	padding-top: 30px;
+	color: #14183E;
+text-align: center;
+	font-size: 1.0625rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: capitalize;
+}
+.card-buton{
+	position: absolute;
+	right: 0; left: 0; top: 170px;
+	width: 7.87613rem;
+	margin: auto;
+	height: 2.64125rem;
+	flex-shrink: 0;
+	border-radius: 4.375rem;
+	background: #20C287;
+	box-shadow: 0px 10px 41px 0px rgba(0, 0, 0, 0.08);
+}
+/*--------footer----------*/
+footer{
+	background: #1B1B1B;
+	padding: 4rem 0;
+}
+.foot h4{
+	text-align: center;
+	color: #FFF;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: capitalize;
+}
+.foot p{
+	width: 23rem;
+	text-align: center;
+	margin: auto;
+	color: rgba(255, 255, 255, 0.64);
+	text-align: center;
+	font-size: 0.9375rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 180%; /* 1.6875rem */
+	text-transform: capitalize;
+}
+hr{
+	margin-top: 2rem;
+	background: rgba(255, 255, 255, 0.13);
+}
+.foot p:nth-child(even){
+	color: rgba(255, 255, 255, 0.64);
+	text-align: center;
+	font-size: 0.875rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.575rem;
+	text-transform: capitalize;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+	#prince{
+		padding: 20px 50px 20px 50px;
+	}
+	#prince .row .col-4 input{
+		width: 370px;
+	}
+	#prince .row .col-4 h2{
+		font-size: 40px;
+	}
+	.carousel-item.active{
+		grid-template-columns: 210px 210px;
+		justify-content: center;
+	}
+	/*----section second due----*/
+	#due{
+		padding: 4rem 1.9rem 6rem 1.9rem;
+	}
+	#due .due-row-1 p{
+		font-size: 2rem;
+	}
+	.due-but-group{
+		width: 22.15913rem;
+	}
+	.arrow svg{
+		width: 2rem;
+		height: 2rem;
+	}
+	.due-row-2{
+		grid-template-columns: 26rem 26rem;
+		row-gap: 1.5rem; column-gap: 0.5rem;
+	}
+	.due-box{
+		width: 25rem;
+	}
+	.due-but-group .nav-pills .nav-item{
+		padding-inline: 9px;
+	}
+	/*------third section whats new	*/
+	#new{
+		padding: 3rem 2rem 3rem 2rem;
+	}
+	.new-row-2{
+		justify-content: center;
+	}
+	.act-list{
+		justify-content: center;
+	}
+	#info{
+		padding: 4rem 1rem 4rem 1rem;
+	}
+	#info .col-5{
+		width: 35%;
+	}
+	.info-box{
+		width: 17rem;
+	}
+	.info-row-2 .info-boxes{
+		column-gap: 0.7rem;
+	}
+	.ops-list{
+		grid-template-columns: 22rem 22rem;
+	}
+	.cards{
+		grid-template-columns: 20rem 20rem;
+		row-gap: 2rem;
+	}
+	.cert{
+		padding: 6rem;
+	}
+
+
+}
+/*Media query for Tablet*/
+@media screen and (max-width: 768px) and (min-width: 426px){
+	.nav-pills{
+		padding-right: 15px;
+		padding-block: 5px;
+	}
+	#prince{
+		padding: 20px 20px 20px 20px;
+	}
+	#prince .row .col-4{
+		width: 100%; text-align: center;
+	}
+	#prince .row .col-6{
+		width: 100%;
+	}
+	.prince-box{
+		width: 195px; height: 200px;
+	}
+	#prince .row .col-4 input{
+		width: 400px; margin: 35px auto;
+	}
+	#prince .row .col-4 h2{
+		font-size: 40px;
+	}
+	.carousel-item.active{
+		grid-template-columns: 180px 180px;
+		justify-content: center;
+		column-gap: 3rem; row-gap: 2rem;
+	}
+	/*----section second due----*/
+	#due{
+		padding: 2rem 1rem 3rem 1rem;
+	}
+	#due .due-row-1{
+		flex-direction: column;
+	}
+	#due .due-row-1 p{
+		font-size: 1.5rem;
+	}
+	.due-but-group{
+		width: 26rem; margin: 0;
+	}
+	.arrow{
+		margin-top: 1.5rem;
+		justify-content: center;
+	}
+	.arrow svg{
+		width: 2rem;
+		height: 2rem;
+	}
+	.due-row-2{
+		grid-template-columns: 26rem;
+		row-gap: 1.5rem; column-gap: 0.5rem;
+		margin-top: 2rem;
+	}
+	.due-box{
+		width: 25rem;
+	}
+	.due-but-group .nav-pills .nav-item{
+		padding-inline: 9px;
+	}
+	#new{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.new-row-1{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.new-row-1 p{
+		font-size: 1.5rem;
+	}
+	.new-row-2{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 2rem;
+	}
+	.new-row-2 .col-5{
+		padding-bottom: 2rem;
+	}
+	.new-row-2 .col-7{
+		row-gap: 1rem;
+		grid-template-columns: 20rem;
+	}
+	.new-box{
+		width: 20rem;
+		height: 9rem;
+	}
+	.accordion-item{
+		width: 22rem;
+	}
+	.new-butt{
+		position: relative;
+		margin-top: 2rem;
+	}
+	#cert{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.cert-row{
+		flex-direction: column;
+		align-items: center;
+	}
+	#cert .col-6 img{
+		position: relative;
+	}
+	.cert-img-box{
+		position: relative;
+		left: 0; right: 0; bottom: 60;
+	}
+	/*-----------section ops-----------------------*/
+	#ops{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.ops-row{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.ops-list{
+		grid-template-columns: 22rem;
+		row-gap: 1rem;
+	}
+	/*--------section action----------*/
+	#action{
+		position: relative;
+		height: 98rem;
+	}
+	.act-list{
+		grid-template-columns: 20rem;
+		row-gap: 1rem;
+		justify-content: center;
+	}
+	.act-row{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	/*-------student info--------*/
+	#info{
+		padding: 1rem;
+		margin-top: 4rem;
+	}
+	.info-row-1{
+		flex-direction: column;
+	}
+	.info-row-2{
+		flex-direction: column;
+		align-items: center;
+	}
+	.info-row-2 .col-5{
+		width: 50%;
+	}
+	.info-row-2 .col-7{
+		width: 50%; text-align: center;
+	}
+	.info-row-2 .info-boxes{
+		grid-template-columns: 20rem;
+		row-gap: 1rem;
+		justify-content: center;
+	}
+	/*-------safe steps-----------*/
+	#step{
+		padding: 1rem;
+	}
+	.step-row{
+		flex-direction: column;
+		align-items: center;
+	}
+	.cards{
+		grid-template-columns: 17.8rem;
+		margin-top: 1rem; row-gap: 1rem;
+	}
+}
+@media screen and (max-width: 425px){
+	.nav-pills{
+		padding-right: 5px;
+		padding-block: 5px;
+	}
+	.nav-pills{
+		justify-content: space-evenly;
+	}
+	.nav-item{
+		padding-inline: 0px;
+	}
+	#prince{
+		padding: 10px;
+	}
+	#prince .row .col-4{
+		width: 100%; text-align: center;
+	}
+	#prince .row .col-6{
+		width: 100%;
+	}
+	.prince-box{
+		width: 195px; height: 200px;
+	}
+	#prince .row .col-4 input{
+		width: 300px; margin: 35px auto;
+	}
+	#prince .row .col-4 h2{
+		font-size: 40px;
+	}
+	.carousel-item.active{
+		grid-template-columns: 180px;
+		justify-content: center;
+	}
+
+	/*----section second due----*/
+	#due{
+		padding: 2rem 1rem 3rem 1rem;
+	}
+	#due .due-row-1{
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	#due .due-row-1 p{
+		font-size: 1.5rem;
+	}
+	.due-but-group{
+		width: 100%; margin: 0;
+	}
+	.arrow{
+		margin-top: 1.5rem;
+		justify-content: center;
+	}
+	.arrow svg{
+		width: 2rem;
+		height: 2rem;
+	}
+	.due-row-2{
+		grid-template-columns: 20rem;
+		row-gap: 1rem; column-gap: 0rem;
+		margin-top: 1.5rem;
+	}
+	.due-box{
+		width: 20rem;
+	}
+	.due-box p{
+		width: 10rem;
+		height: 3rem;
+	}
+	.due-box-data{
+		width: 8rem;
+		height: 2.5rem;
+	}
+	.due-box-data i{
+		padding-inline: 4px;
+	}
+	.due-box-data p{
+		width: 5.22169rem;
+		height: 1.47569rem;
+	}
+	.due-but-group .nav-pills .nav-item{
+		padding-inline: 0px;
+	}
+	#new{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.new-row-1{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.new-row-1 p{
+		font-size: 1.5rem;
+	}
+	.new-row-2{
+		flex-direction: column;
+		margin-top: 2rem;
+	}
+	.new-row-2 .col-7{
+		row-gap: 1rem;
+		grid-template-columns: 10rem;
+	}
+	.new-row-2 .col-5{
+		padding: 1rem;
+	}
+	.new-box{
+		width: 20rem;
+		height: 9rem;
+	}
+	.accordion-item{
+		width: 20rem;
+	}
+	.new-butt{
+		position: relative;
+		margin-top: 2rem;
+		height: 3.5rem;
+	}
+	#cert{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.cert-row{
+		flex-direction: column;
+		align-items: center;
+	}
+	#cert .col-6{
+		width: 100%; margin: auto;
+	}
+	.cert-box{
+		width: 20rem;
+	}
+	.cert-box p{
+		font-size: 1rem;
+	}
+	#cert .col-6 img{
+		position: relative;
+		margin: 0;
+	}
+	.cert-img-box{
+		position: relative;
+	}
+	/*-----------section ops-----------------------*/
+	#ops{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.ops-row{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.ops-list{
+		grid-template-columns: 22rem;
+		row-gap: 1rem;
+	}
+	/*--------section action----------*/
+	#action{
+		position: relative;
+		height: 98rem;
+	}
+	.act-list{
+		grid-template-columns: 20rem;
+		row-gap: 1rem;
+		padding: 0;
+		justify-content: center;
+	}
+	.act-row{
+		flex-direction: column;
+	}
+	.action-sect{
+		padding: 0;
+	}
+
+	/*-------student info--------*/
+	#info{
+		padding: 1rem;
+	}
+	.info-row-1{
+		flex-direction: column;
+	}
+	.info-row-2{
+		flex-direction: column;
+	}
+	.info-row-2 .col-7{
+		text-align: center;
+	}
+	.info-row-2 .info-boxes{
+		grid-template-columns: 10rem;
+		row-gap: 1rem;
+		justify-content: center;
+	}
+	/*-------safe steps-----------*/
+	#step{
+		padding: 1rem;
+	}
+	.step-row{
+		flex-direction: column; align-items: center;
+	}
+	.step-row h4{
+		font-size: 1.9rem;
+	}
+	.cards{
+		grid-template-columns: 17.8rem;
+		margin-top: 1rem; row-gap: 1rem;
+	}
+}
+	</style>
+</head>
+<body>
+
+	<!-- Header -->
+	<header>
+		<nav>
+			<ul class="nav nav-pills">
+  				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+  				<li class="nav-item"><a class="nav-link" href="#">Job Aids</a></li>
+  				<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Prinicipal section -->
+	<section id="prince">
+	
+			<div class="row">
+				<div class="col-4">
+					<img src="prince.png">
+					<h2>principal portal</h2>
+    				<form class="form-inline my-2 my-lg-0">
+      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+      					<input class="form-control mr-sm-2" type="search" placeholder="What you looking for"  aria-label="Search">
+    				</form>
+				</div>
+
+				<div class="col-6">
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  						<ol class="carousel-indicators">
+    						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  						</ol>
+  						<div class="carousel-inner">
+    						<div class="carousel-item active">
+    							<div class="prince-box">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="96" viewBox="0 0 95 96" fill="none">
+  										<circle cx="47.7128" cy="47.863" r="47.2605" fill="white"/>	
+									</svg>
+
+									<p>School Tools</p>
+    							</div>
+    							<div class="prince-box">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="96" viewBox="0 0 95 96" fill="none">
+  										<circle cx="47.7128" cy="47.863" r="47.2605" fill="white"/>
+									</svg>
+									<p>District OPS</p>
+    							</div>
+    							<div class="prince-box">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="96" viewBox="0 0 95 96" fill="none">
+  										<circle cx="47.7128" cy="47.863" r="47.2605" fill="white"/>
+									</svg>
+									<p>Certifications</p>
+    							</div>
+    							<div class="prince-box">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="96" viewBox="0 0 95 96" fill="none">
+  										<circle cx="47.7128" cy="47.863" r="47.2605" fill="white"/>
+									</svg>
+									<p>Actions</p>
+    							</div>
+    							<div class="prince-box">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="96" viewBox="0 0 95 96" fill="none">
+  										<circle cx="47.7128" cy="47.863" r="47.2605" fill="white"/>
+									</svg>
+									<p>Student Info</p>
+    							</div>
+    							<div class="prince-box">
+    								<svg xmlns="http://www.w3.org/2000/svg" width="95" height="96" viewBox="0 0 95 96" fill="none">
+  										<circle cx="47.7128" cy="47.863" r="47.2605" fill="white"/>
+									</svg>
+									<p>What’s New</p>
+    							</div>
+    						</div>
+    						
+    						<div class="carousel-item">
+      						<img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+    						</div>
+    						
+    						<div class="carousel-item">
+      						<img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+    						</div>
+
+  						</div>
+  
+					</div>
+				</div>
+			</div>
+			
+	</section>
+
+	<!-- second section what's due-->
+	<section id="due">
+		<div class="due-row-1">
+			<p>what's due</p>
+			<div class="due-but-group">
+				<ul class="nav nav-pills">
+  					<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a></li>
+				  	<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+				  	<li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+				</ul>
+			</div>
+			<div class="arrow">
+				
+					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34" fill="none">
+  					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.3701 7.54092C21.8207 6.99157 20.9301 6.99157 20.3807 7.54092L11.9406 15.981C11.3913 16.5304 11.3913 17.4211 11.9406 17.9704L20.3807 26.4105C20.9301 26.9599 21.8207 26.9599 22.3701 26.4105C22.9194 25.8612 22.9194 24.9705 22.3701 24.4212L14.9246 16.9757L22.3701 9.53027C22.9194 8.98093 22.9194 8.09026 22.3701 7.54092Z" fill="#14183E"/>
+				</svg>
+				<p>march 21</p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+  					<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8184 7.54092C12.3677 6.99157 13.2584 6.99157 13.8077 7.54092L22.2479 15.981C22.7972 16.5304 22.7972 17.4211 22.2479 17.9704L13.8077 26.4105C13.2584 26.9599 12.3677 26.9599 11.8184 26.4105C11.269 25.8612 11.269 24.9705 11.8184 24.4212L19.2638 16.9757L11.8184 9.53027C11.269 8.98093 11.269 8.09026 11.8184 7.54092Z" fill="#14183E"/>
+				</svg>
+				
+			</div>
+		</div>
+		<div class="due-row-2">
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+			<div class="due-box">
+				<p>Fall ShakeOut Earth quake Drill</p> <div class="due-box-data"><i class="fa-regular fa-clock" style="color: #ffffff;"></i><p>10-10-2021</p></div>
+			</div>
+		</div>
+	</section>
+
+	<!-- what's new section 3 -->
+	<section id="new">
+		<div class="new-row-1">
+			<p>What's new</p>
+			<div class="arrow">
+					<svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34" fill="none">
+  					<path fill-rule="evenodd" clip-rule="evenodd" d="M22.3701 7.54092C21.8207 6.99157 20.9301 6.99157 20.3807 7.54092L11.9406 15.981C11.3913 16.5304 11.3913 17.4211 11.9406 17.9704L20.3807 26.4105C20.9301 26.9599 21.8207 26.9599 22.3701 26.4105C22.9194 25.8612 22.9194 24.9705 22.3701 24.4212L14.9246 16.9757L22.3701 9.53027C22.9194 8.98093 22.9194 8.09026 22.3701 7.54092Z" fill="#14183E"/>
+				</svg>
+				<p>march 21</p>
+				<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+  					<path fill-rule="evenodd" clip-rule="evenodd" d="M11.8184 7.54092C12.3677 6.99157 13.2584 6.99157 13.8077 7.54092L22.2479 15.981C22.7972 16.5304 22.7972 17.4211 22.2479 17.9704L13.8077 26.4105C13.2584 26.9599 12.3677 26.9599 11.8184 26.4105C11.269 25.8612 11.269 24.9705 11.8184 24.4212L19.2638 16.9757L11.8184 9.53027C11.269 8.98093 11.269 8.09026 11.8184 7.54092Z" fill="#14183E"/>
+				</svg>
+			</div>
+		</div>
+		<div class="new-row-2">
+			<div class="col-5">
+				<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      	<span><i class="fa-solid fa-location-dot fa-xl" style="color:#20C287;"></i></span>
+        Local District 
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        hi
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <span><i class="fa-solid fa-building-columns fa-xl" style="color: #20c287;"></i></span>School Type
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Accordion Bod
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      	<span><i class="fa-solid fa-location-dot fa-xl" style="color:#20C287;"></i></span>
+        Category 
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Accordion Body
+      </div>
+    </div>
+  </div>
+</div>
+<button class="new-butt">view more</button>
+			</div>
+
+			<div class="col-7">
+				<div class="new-box">
+					<h4>Data and Accountability</h4>
+					<p>Fall 2021 School Experience Survey</p>
+					<div class="due-box-data"><i class="fa-regular fa-calendar" style="color: #20C287;"></i><p>5-10-2021</p></div>
+				</div>
+				<div class="new-box">
+					<h4>Data and Accountability</h4>
+					<p>Fall 2021 School Experience Survey</p>
+					<div class="due-box-data"><i class="fa-regular fa-calendar" style="color: #20C287;"></i><p>5-10-2021</p></div>
+				</div>
+				<div class="new-box">
+					<h4>Data and Accountability</h4>
+					<p>Fall 2021 School Experience Survey</p>
+					<div class="due-box-data"><i class="fa-regular fa-calendar" style="color: #20C287;"></i><p>5-10-2021</p></div>
+				</div>
+				<div class="new-box">
+					<h4>Data and Accountability</h4>
+					<p>Fall 2021 School Experience Survey</p>
+					<div class="due-box-data"><i class="fa-regular fa-calendar" style="color: #20C287;"></i><p>5-10-2021</p></div>
+				</div>
+				<div class="new-box">
+					<h4>Data and Accountability</h4>
+					<p>Fall 2021 School Experience Survey</p>
+					<div class="due-box-data"><i class="fa-regular fa-calendar" style="color: #20C287;"></i><p>5-10-2021</p></div>
+				</div>
+				<div class="new-box">
+					<h4>Data and Accountability</h4>
+					<p>Fall 2021 School Experience Survey</p>
+					<div class="due-box-data"><i class="fa-regular fa-calendar" style="color: #20C287;"></i><p>5-10-2021</p></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- section certification -->
+	<section id="cert">
+		<div class="cert-row">
+			<div class="col-6">
+				<img src="cert.jpg	">
+				<div class="cert-img-box"></i></div>
+			</div>
+			<div class="col-6">
+				<h4>certifications</h4>
+				<!-- 3 certification boxes -->
+				<div class="cert-box">
+				<div class="cert-box-data"><i class="fa-solid fa-medal fa-xl style= "color: red; ></i></div>
+				<p>Administrator Certification</p> 
+				</div>
+				<div class="cert-box">
+				<div class="cert-box-data"><i class="fa-solid fa-medal fa-xl style= "color: red; ></i></div>
+				<p>Administrator Certification</p> 
+				</div>
+				<div class="cert-box">
+				<div class="cert-box-data"><i class="fa-solid fa-medal fa-xl style= "color: red; ></i></div>
+				<p>Administrator Certification</p> 
+				</div>
+				<button class="cert-but">see more </button>
+			</div>
+		</div>
+	</section>
+
+	<!-- section ops -->
+	<section id="ops">
+		<div class="ops-row">
+			<h4>district ops</h4>
+			<form class="form-inline my-2 my-lg-0">
+      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+      				<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+    			</form>
+		</div>
+
+		<div class="ops-list">
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+			<div class="ops-box">
+				<div class="ops-box-icon"><i class="fa-solid fa-location-dot fa-2xl" style="color:#fff;"></i></div>
+				<p>Active Shooter - LAUSD Online TrainingHelp icon</p>
+			</div>
+		</div>
+
+		<div class="ops-button"><button class="ops-but">view more</button></div>
+	</section>
+
+	<!-- section action -->
+	<section id="action">
+		<div class="bgimg"></div>
+
+		<div class="action-sect">
+
+		<div class="act-row">
+			<h4>actions</h4>
+			<form class="form-inline my-2 my-lg-0">
+      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+      				<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+    			</form>
+		</div>
+
+		<div class="act-list">
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+			<div class="act-box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+ 					 <circle cx="32.249" cy="32.5521" r="32.1156" fill="#FF651B"/></svg>
+				<p>Annual GATE Report Help icon</p>
+			</div>
+		</div>
+
+		</div>
+	</section>
+
+	<!-- stdent info -->
+	<section id="info">
+		<div class="info-row">
+			<div class="info-row-1">
+				<h4>student info</h4>
+				<form class="form-inline my-2 my-lg-0">
+      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+      				<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+    			</form>
+
+			</div>
+
+			<div class="info-row-2">
+				<div class="col-5">
+					<img src="girl.png">		
+				</div>
+				<div class="col-7">
+					<div class="info-boxes">
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>Amplify/DibelsHelp icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>MagnetHelp icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>Clever Help icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>MiSiSHelp icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>Amplify/DibelsHelp icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>MyDataHelp icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>Clever Help icon</p>
+					</div>
+					<div class="info-box">
+						<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+  						<circle cx="24.8972" cy="24.9243" r="24.5" fill="#FF4949"/></svg>
+  							<p>Parent PortalHelp icon</p>
+					</div>
+					</div>
+					<button class="info-but">view more</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- safe steps sect -->
+	<section id="step">
+		<div class="safe-step">
+			<div class="step-row">
+				<h4>safe steps to safe schools</h4>
+				<form class="form-inline my-2 my-lg-0">
+      					<!-- <i class="fa-solid fa-magnifying-glass fa-2xs"></i> -->
+      				<input class="form-control mr-sm-2" type="search" placeholder="Search"  aria-label="Search">
+    			</form>
+			</div>
+			<div class="cards">
+				<div class="card" style="width: 17.8rem;">
+  					<img src="card1.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<p class="card-text">Back To School Family GuideHelp icon</p>
+    				<button class="card-buton">new</button>
+  					</div>
+				</div>
+				<div class="card" style="width: 17.8rem;">
+  					<img src="card2.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<p class="card-text">Back To School Family GuideHelp icon</p>
+  					</div>
+				</div>
+				<div class="card" style="width: 17.8rem;">
+  					<img src="card3.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<p class="card-text">Back To School Family GuideHelp icon</p>
+    				<button class="card-buton">new</button>
+  					</div>
+				</div>
+				<div class="card" style="width: 17.8rem;">
+  					<img src="card4.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<p class="card-text">Back To School Family GuideHelp icon</p>
+  					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer>
+		<div class="foot">
+			<h4>Browsers and Operating Systems Compatibility</h4>
+			<p>© 2021 - LOS ANGELES UNIFIED SCHOOL DISTRICT 333 S Beaudry Ave., Los Angeles, CA 90017</p>
+			<hr>
+			<p>Design By Dixellart</p>
+		</div>
+	</footer>
+</body>
+</html>
